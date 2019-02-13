@@ -1,8 +1,6 @@
-/-                               2019-02-??, Oberhamersbach
+import data.real.basic
 
-Computer-assisted theorem proving — my experience
-
-by Johan Commelin -/
+/- Type theory -/
 
 #check "hello, world!"
 
@@ -12,4 +10,14 @@ by Johan Commelin -/
 
 #check 3 = 4
 
+#check false
+
 #check ℤ = "hi"
+
+#check real.sqrt
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+#eval 1 + 1
+
+#eval real.sqrt 2

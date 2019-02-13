@@ -1,10 +1,27 @@
-import tactic.tidy
-import data.complex.exponential
+/- The Curry-Howard correspondence -/
+/- a.k.a. propositions-as-types    -/
+/- a.k.a. proofs-as-programs       -/
 
-example : 3 = 3 :=
-by simp
+variables (X Y : Type) (f : X → Y)
 
-open complex
+variables (P Q : Prop) (hypothesis : P → Q)
 
-example : exp 0 = 1 :=
-by simp
+#check ∀ x : X, P
+
+variable (P' : X → Prop)
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+variables (G : X → Type) (hG : ∀ x, group (G x))
+
+#check Π x, G x
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+lemma universal : (∀ x, P' x) = (Π x, P' x) :=
+begin
+  apply eq.refl,
+end
+
+lemma subsets_are_just_props :
+  { x | P' x } = P' := rfl
