@@ -10,6 +10,16 @@ definition double (n : ℕ) : ℕ := n + n
 
 definition quadruple : ℕ → ℕ := double ∘ double
 
+definition FLT : Prop :=
+∀ n > 2, ∀ x y z, x^n + y^n = z^n → (x = 0 ∨ y = 0)
+
+theorem Wiles : FLT :=
+begin
+  unfold FLT,
+  intros,
+  sorry
+end
+
 --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 lemma transitive_imply (P Q R : Prop)
