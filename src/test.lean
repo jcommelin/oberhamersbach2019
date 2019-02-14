@@ -9,6 +9,7 @@ begin
   use_this p,
   have p_is_prime : prime p := min_fac_prime _,
   split,
+    show p ≥ n,
     by_contradiction,
     have key_fact : p ∣ n.fact := dvd_fact _ _,
     have oops : p ∣ 1,
