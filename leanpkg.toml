@@ -1,5 +1,5 @@
 [package]
-name = "oberhamersbach2019"
+name = "oberharmersbach2019"
 version = "0.1"
 lean_version = "3.4.2"
 path = "src"
