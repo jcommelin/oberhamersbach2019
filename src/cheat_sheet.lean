@@ -74,7 +74,7 @@ by Johan Commelin -/
 
 
 
-import data.real.basic data.nat.prime help
+import data.real.basic data.nat.prime nat.extra
 
 definition hi := "hello, world!"
 
