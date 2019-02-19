@@ -1,9 +1,8 @@
-/-                               2019-02-19, Oberharmersbach
+/-                   2019-02-19, Oberharmersbach
 
 
-
-
-Interactive theorem proving with a computer — my experience
+Interactive theorem proving with a computer
+— my experience
 
 
 --                 _
@@ -15,8 +14,6 @@ Interactive theorem proving with a computer — my experience
 
 
 A rose-colored introduction
-
-
 
 
 by Johan Commelin -/
@@ -99,7 +96,8 @@ definition hi := "hello, world!"
 
 #check (nat.add_comm : ∀ (a b : ℕ), a + b = b + a)
 
-example : ∀ (a b : ℕ), a + b = b + a := nat.add_comm
+example : ∀ (a b : ℕ), a + b = b + a :=
+nat.add_comm
 
 
 
