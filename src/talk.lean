@@ -4,7 +4,6 @@
 Interactive theorem proving with a computer
 — my experience
 
-
 --                 _
 --                | | ___  __ _ _ __
 --                | |/ _ \/ _` | '_ \
@@ -12,24 +11,9 @@ Interactive theorem proving with a computer
 --                |_|\___|\__,_|_| |_|
 --
 
-
 A rose-colored introduction
 
-
-by Johan Commelin -/
-
-
-
-
-
-
-
-
-
-
-
-
-
+--                          by Johan Commelin -/
 
 
 
@@ -43,12 +27,6 @@ by Johan Commelin -/
 --
 --
 ---- Automatic theorem proving
-
-
-
-
-
-
 
 
 
